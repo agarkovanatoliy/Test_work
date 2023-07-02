@@ -41,5 +41,25 @@ string[] GetArray()
     return res;
 }
 
+
+string[] LengthElement(string[] arr)
+{
+    string[] res = new string[] {};
+    int j = 0;
+    foreach (var item in arr)
+    {
+        if (item.Length <= 3)
+        {
+            Array.Resize(ref res, res.Length + 1);
+            res[j] = item;
+            j++;
+        }
+    }
+    return res;
+}
+
 string[] array = GetArray();
 PrintArray(array);
+string[] array1 = LengthElement(array);
+Console.WriteLine();
+PrintArray(array1);
