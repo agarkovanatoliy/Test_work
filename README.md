@@ -7,7 +7,9 @@
 **Метод получения строковых данных от пользователя**
 
 string Prompt(string message)
+
 {
+
     Console.Write(message);
     string item = Console.ReadLine();
     return item;
@@ -16,7 +18,9 @@ string Prompt(string message)
 **Метод розпечатывания массива строковых данных**
 
 void PrintArray(string[] arr)
+
 {
+    
     for (int i = 0; i < arr.Length; i++)
     {
         Console.Write($"{arr[i]} ");
