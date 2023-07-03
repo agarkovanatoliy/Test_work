@@ -71,6 +71,8 @@ string[] LengthElement(string[] arr)
     return res;
 }
 
+**Обращение к методам**
+
 string[] array = GetArray();
 
 PrintArray(array);
